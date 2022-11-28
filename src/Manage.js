@@ -85,7 +85,7 @@ export default function Album() {
       <AppBar position="relative">
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            <Stack direction="row" spacing={2} ><Card
+            <Stack direction="row" spacing={8} ><Card
                   sx={{ height: '40px', display: 'flex', flexDirection: 'column' ,width:'40px'}}
                 >
                   <CardMedia
@@ -107,37 +107,9 @@ export default function Album() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Hero unit */}
-        <Box
-          sx={{
-            bgcolor: 'background.paper',pt: 8,pb: 6,
-          }}
-        >
-          <Container maxWidth="sm">
-            <Typography
-              component="h1" variant="h2"
-              align="center" color="text.primary"
-              gutterBottom
-            >
-              Kiosk Manage
-            </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Coming Soon!
-            </Typography>
-            <Stack
-              sx={{ pt: 4 }}
-              direction="row"
-              spacing={2}
-              justifyContent="center"
-            >
-              <Button variant="contained">Kiosk</Button>
-              <Button variant="outlined">EXAT</Button>
-            </Stack>
-          </Container>
-        </Box>
-        <Container sx={{ py: 8 }} maxWidth="md">
+        <Container sx={{ py: 0 }} maxWidth="md">
           {/* End hero unit */}
-          <Grid container spacing={4}>
+          <Grid container spacing={5}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card
