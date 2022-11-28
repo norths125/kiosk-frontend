@@ -1,9 +1,9 @@
-import Button from '@mui/material/Button';
+import Header from './component/Header';
 
 function App() {
   return (
     <div>
-      <Button variant="contained">Hello World</Button>
+      <Header />
     </div>
   );
 }

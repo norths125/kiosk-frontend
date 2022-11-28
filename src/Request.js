@@ -16,6 +16,7 @@ import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import { Home } from '@mui/icons-material';
+import Header from './component/Header';
 
 function Copyright() {
   return (
@@ -82,30 +83,7 @@ export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            <Stack direction="row" spacing={2} ><Card
-                  sx={{ height: '40px', display: 'flex', flexDirection: 'column' ,width:'40px'}}
-                >
-                  <CardMedia
-                    component="img"
-                    sx={{// 16:9 
-                      pt: '0%',
-                    }}
-                    image="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Emblem_of_the_Expressway_Authority_of_Thailand.svg/600px-Emblem_of_the_Expressway_Authority_of_Thailand.svg.png"
-                    alt="random"></CardMedia>
-                    </Card>
-                    <a>ทางการพิเศษแห่งประเทศไทย</a>
-          <Button variant="variant" color="inherit" onClick={HOME}>HOME</Button>
-          <Button variant="variant" color="inherit" onClick={MANAGE}>MANAGE</Button>
-          <Button variant="variant" color="inherit" onClick={LIVE}>LIVE</Button>
-          <Button variant="variant" color="inherit" onClick={PROFILE}>PROFILE</Button>
-          <Button variant="contained" color="error" onClick={handleLogout}>Logout</Button>
-          </Stack>
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Header />
       <main>
         {/* Hero unit */}
         <Box
