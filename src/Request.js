@@ -18,19 +18,6 @@ import {Routes, Route, useNavigate} from 'react-router-dom';
 import { Home } from '@mui/icons-material';
 import Header from './component/Header';
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      
-      <Link color="inherit" href="https://mui.com/">
-
-      </Link>{' '}
-
-      {'.'}
-    </Typography>
-  );
-}
-
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const theme = createTheme();
@@ -148,9 +135,6 @@ export default function Album() {
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
-      
-        <Copyright />
     </ThemeProvider>
   );
 }
